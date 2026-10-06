@@ -1,4 +1,9 @@
 # Extract-Skeleton
+- C++ / OpenCV 사용
+- Binary image 기반 skeleton extraction
+- erosion, opening을 반복 적용하는 morphological skeletonization 구현
+- 각 iteration에서의 차이 영상을 누적하여 skeleton 생성
+- MORPH_RECT, MORPH_CROSS 등 structuring element에 따른 결과 비교
 
 # img1
 
