@@ -7,7 +7,7 @@
 
 # img1 , result
 
-<img width="251" height="100" alt="sk1" src="https://github.com/user-attachments/assets/6687a2ba-a3d8-4891-8b90-632ac2754d98" /> <img width="251" height="100" alt="sk1_res" src="https://github.com/user-attachments/assets/579e40f9-9d3a-423c-9f9a-ccef213d1343" />
+<img width="251" height="100" alt="sk1" src="https://github.com/user-attachments/assets/6687a2ba-a3d8-4891-8b90-632ac2754d98" />       <img width="251" height="100" alt="sk1_res" src="https://github.com/user-attachments/assets/579e40f9-9d3a-423c-9f9a-ccef213d1343" />
 
 # img1 result
 
