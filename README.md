@@ -1,10 +1,17 @@
 # Extract-Skeleton
-- C++ / OpenCV 사용
-- Binary image 기반 skeleton extraction
-- erosion, opening을 반복 적용하는 morphological skeletonization 구현
-- 각 iteration에서의 차이 영상을 누적하여 skeleton 생성
-- MORPH_RECT, MORPH_CROSS 등 structuring element에 따른 결과 비교
-
+erosion으로 반복적으로 축소하면서 각 단계에서 opening 후에도 복원되지 않는 영역을 difference로 추출. differnce를 누적하여 skeleton 생성
+# Erosion
+- 객체의 바깥 경계를 반복적으로 제거하여 형태를 점점 안쪽으로 축소
+- 반복할수록 객체의 중심부에 가까운 구조만 남게됨
+# Opening
+- erosion 결과에  erosion , dilation 적용
+- 큰 구조는 복원되지만, 현재 scale에서 더 이상 유지되지 못하는 얇은 구조는 사라짐
+# Difference extraction
+- erosion 결과와 opening 결과의 차이를 계산
+- 현재 객체에는 존재하지만 한번더 erosion, dilation 했을때 복원하면 사라지는 부분 추출
+- 이 영역은 해당 scale에서 객체의 형태와 두께를 표현하는 중심구조로 볼 수 있음.
+# Skeleton accumulation
+- erosion 단계에서 얻은 difference 를 누적
 # img1 , result
 
 <img width="251" height="100" alt="sk1" src="https://github.com/user-attachments/assets/6687a2ba-a3d8-4891-8b90-632ac2754d98" />       <img width="251" height="100" alt="sk1_res" src="https://github.com/user-attachments/assets/579e40f9-9d3a-423c-9f9a-ccef213d1343" />
