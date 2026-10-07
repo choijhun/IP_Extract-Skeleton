@@ -5,13 +5,13 @@
 - 각 iteration에서의 차이 영상을 누적하여 skeleton 생성
 - MORPH_RECT, MORPH_CROSS 등 structuring element에 따른 결과 비교
 
-# img1
+# img1 , result
 
-<img width="251" height="100" alt="sk1" src="https://github.com/user-attachments/assets/6687a2ba-a3d8-4891-8b90-632ac2754d98" />
+<img width="251" height="100" alt="sk1" src="https://github.com/user-attachments/assets/6687a2ba-a3d8-4891-8b90-632ac2754d98" /> <img width="251" height="100" alt="sk1_res" src="https://github.com/user-attachments/assets/579e40f9-9d3a-423c-9f9a-ccef213d1343" />
 
 # img1 result
 
-<img width="251" height="100" alt="sk1_res" src="https://github.com/user-attachments/assets/579e40f9-9d3a-423c-9f9a-ccef213d1343" />
+
 
 # img2
 
